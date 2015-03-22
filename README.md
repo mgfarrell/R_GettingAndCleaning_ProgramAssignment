@@ -46,88 +46,90 @@ The above data sets were combined into a single data set with no summarization o
 
 A final step was performed to aggregate the data by Subject, Activity, and the calculate the mean of the remaining 79 variables.  The resulting data set contains 180 observations and 81 variables and loaded into the ActivityDataSummary data set.  There was no change to the variable names in the data set.
 
-Detailed list of observations is below:
+List of variables in the two output data sets is below.
 
-Subject
-Activity
-TimeBodyAcc.StdDevX
-TimeBodyAcc.StdDevY
-TimeBodyAcc.StdDevZ
-TimeGravityAcc.StdDevX
-TimeGravityAcc.StdDevY
-TimeGravityAcc.StdDevZ
-TimeBodyAccJerk.StdDevX
-TimeBodyAccJerk.StdDevY
-TimeBodyAccJerk.StdDevZ
-TimeBodyGyro.StdDevX
-TimeBodyGyro.StdDevY
-TimeBodyGyro.StdDevZ
-TimeBodyGyroJerk.StdDevX
-TimeBodyGyroJerk.StdDevY
-TimeBodyGyroJerk.StdDevZ
-TimeBodyAccMag.StdDev
-TimeGravityAccMag.StdDev
-TimeBodyAccJerkMag.StdDev
-TimeBodyGyroMag.StdDev
-TimeBodyGyroJerkMag.StdDev
-FreqBodyAcc.StdDevX
-FreqBodyAcc.StdDevY
-FreqBodyAcc.StdDevZ
-FreqBodyAccJerk.StdDevX
-FreqBodyAccJerk.StdDevY
-FreqBodyAccJerk.StdDevZ
-FreqBodyGyro.StdDevX
-FreqBodyGyro.StdDevY
-FreqBodyGyro.StdDevZ
-FreqBodyAccMag.StdDev
-FreqBodyBodyAccJerkMag.StdDev
-FreqBodyBodyGyroMag.StdDev
-FreqBodyBodyGyroJerkMag.StdDev
-TimeBodyAcc.MeanX
-TimeBodyAcc.MeanY
-TimeBodyAcc.MeanZ
-TimeGravityAcc.MeanX
-TimeGravityAcc.MeanY
-TimeGravityAcc.MeanZ
-TimeBodyAccJerk.MeanX
-TimeBodyAccJerk.MeanY
-TimeBodyAccJerk.MeanZ
-TimeBodyGyro.MeanX
-TimeBodyGyro.MeanY
-TimeBodyGyro.MeanZ
-TimeBodyGyroJerk.MeanX
-TimeBodyGyroJerk.MeanY
-TimeBodyGyroJerk.MeanZ
-TimeBodyAccMag.Mean
-TimeGravityAccMag.Mean
-TimeBodyAccJerkMag.Mean
-TimeBodyGyroMag.Mean
-TimeBodyGyroJerkMag.Mean
-FreqBodyAcc.MeanX
-FreqBodyAcc.MeanY
-FreqBodyAcc.MeanZ
-FreqBodyAcc.Meanq...X
-FreqBodyAcc.Meanq...Y
-FreqBodyAcc.Meanq...Z
-FreqBodyAccJerk.MeanX
-FreqBodyAccJerk.MeanY
-FreqBodyAccJerk.MeanZ
-FreqBodyAccJerk.Meanq...X
-FreqBodyAccJerk.Meanq...Y
-FreqBodyAccJerk.Meanq...Z
-FreqBodyGyro.MeanX
-FreqBodyGyro.MeanY
-FreqBodyGyro.MeanZ
-FreqBodyGyro.Meanq...X
-FreqBodyGyro.Meanq...Y
-FreqBodyGyro.Meanq...Z
-FreqBodyAccMag.Mean
-FreqBodyAccMag.Meanq..
-FreqBodyBodyAccJerkMag.Mean
-FreqBodyBodyAccJerkMag.Meanq..
-FreqBodyBodyGyroMag.Mean
-FreqBodyBodyGyroMag.Meanq..
-FreqBodyBodyGyroJerkMag.Mean
-FreqBodyBodyGyroJerkMag.Meanq..
+ActivityDetailData Variable Name | ActivitySummaryData Variable Name | Notes
+-------------------------------- | --------------------------------- | -----
+Subject | Subject | Values from 1-30, indicating the identity of the subject.
+Activity | Activity | Values from 1-6, indicating the type of activity performed.  See description above.
+TimeBodyAcc.StdDevX | MeanOfTimeBodyAcc.StdDevX | 
+TimeBodyAcc.StdDevY | MeanOfTimeBodyAcc.StdDevY | 
+TimeBodyAcc.StdDevZ | MeanOfTimeBodyAcc.StdDevZ | 
+TimeGravityAcc.StdDevX | MeanOfTimeGravityAcc.StdDevX | 
+TimeGravityAcc.StdDevY | MeanOfTimeGravityAcc.StdDevY | 
+TimeGravityAcc.StdDevZ | MeanOfTimeGravityAcc.StdDevZ | 
+TimeBodyAccJerk.StdDevX | MeanOfTimeBodyAccJerk.StdDevX | 
+TimeBodyAccJerk.StdDevY | MeanOfTimeBodyAccJerk.StdDevY | 
+TimeBodyAccJerk.StdDevZ | MeanOfTimeBodyAccJerk.StdDevZ | 
+TimeBodyGyro.StdDevX | MeanOfTimeBodyGyro.StdDevX | 
+TimeBodyGyro.StdDevY | MeanOfTimeBodyGyro.StdDevY | 
+TimeBodyGyro.StdDevZ | MeanOfTimeBodyGyro.StdDevZ | 
+TimeBodyGyroJerk.StdDevX | MeanOfTimeBodyGyroJerk.StdDevX | 
+TimeBodyGyroJerk.StdDevY | MeanOfTimeBodyGyroJerk.StdDevY | 
+TimeBodyGyroJerk.StdDevZ | MeanOfTimeBodyGyroJerk.StdDevZ | 
+TimeBodyAccMag.StdDev | MeanOfTimeBodyAccMag.StdDev | 
+TimeGravityAccMag.StdDev | MeanOfTimeGravityAccMag.StdDev | 
+TimeBodyAccJerkMag.StdDev | MeanOfTimeBodyAccJerkMag.StdDev | 
+TimeBodyGyroMag.StdDev | MeanOfTimeBodyGyroMag.StdDev | 
+TimeBodyGyroJerkMag.StdDev | MeanOfTimeBodyGyroJerkMag.StdDev | 
+FreqBodyAcc.StdDevX | MeanOfFreqBodyAcc.StdDevX | 
+FreqBodyAcc.StdDevY | MeanOfFreqBodyAcc.StdDevY | 
+FreqBodyAcc.StdDevZ | MeanOfFreqBodyAcc.StdDevZ | 
+FreqBodyAccJerk.StdDevX | MeanOfFreqBodyAccJerk.StdDevX | 
+FreqBodyAccJerk.StdDevY | MeanOfFreqBodyAccJerk.StdDevY | 
+FreqBodyAccJerk.StdDevZ | MeanOfFreqBodyAccJerk.StdDevZ | 
+FreqBodyGyro.StdDevX | MeanOfFreqBodyGyro.StdDevX | 
+FreqBodyGyro.StdDevY | MeanOfFreqBodyGyro.StdDevY | 
+FreqBodyGyro.StdDevZ | MeanOfFreqBodyGyro.StdDevZ | 
+FreqBodyAccMag.StdDev | MeanOfFreqBodyAccMag.StdDev | 
+FreqBodyBodyAccJerkMag.StdDev | MeanOfFreqBodyBodyAccJerkMag.StdDev | 
+FreqBodyBodyGyroMag.StdDev | MeanOfFreqBodyBodyGyroMag.StdDev | 
+FreqBodyBodyGyroJerkMag.StdDev | MeanOfFreqBodyBodyGyroJerkMag.StdDev | 
+TimeBodyAcc.MeanX | MeanOfTimeBodyAcc.MeanX | 
+TimeBodyAcc.MeanY | MeanOfTimeBodyAcc.MeanY | 
+TimeBodyAcc.MeanZ | MeanOfTimeBodyAcc.MeanZ | 
+TimeGravityAcc.MeanX | MeanOfTimeGravityAcc.MeanX | 
+TimeGravityAcc.MeanY | MeanOfTimeGravityAcc.MeanY | 
+TimeGravityAcc.MeanZ | MeanOfTimeGravityAcc.MeanZ | 
+TimeBodyAccJerk.MeanX | MeanOfTimeBodyAccJerk.MeanX | 
+TimeBodyAccJerk.MeanY | MeanOfTimeBodyAccJerk.MeanY | 
+TimeBodyAccJerk.MeanZ | MeanOfTimeBodyAccJerk.MeanZ | 
+TimeBodyGyro.MeanX | MeanOfTimeBodyGyro.MeanX | 
+TimeBodyGyro.MeanY | MeanOfTimeBodyGyro.MeanY | 
+TimeBodyGyro.MeanZ | MeanOfTimeBodyGyro.MeanZ | 
+TimeBodyGyroJerk.MeanX | MeanOfTimeBodyGyroJerk.MeanX | 
+TimeBodyGyroJerk.MeanY | MeanOfTimeBodyGyroJerk.MeanY | 
+TimeBodyGyroJerk.MeanZ | MeanOfTimeBodyGyroJerk.MeanZ | 
+TimeBodyAccMag.Mean | MeanOfTimeBodyAccMag.Mean | 
+TimeGravityAccMag.Mean | MeanOfTimeGravityAccMag.Mean | 
+TimeBodyAccJerkMag.Mean | MeanOfTimeBodyAccJerkMag.Mean | 
+TimeBodyGyroMag.Mean | MeanOfTimeBodyGyroMag.Mean | 
+TimeBodyGyroJerkMag.Mean | MeanOfTimeBodyGyroJerkMag.Mean | 
+FreqBodyAcc.MeanX | MeanOfFreqBodyAcc.MeanX | 
+FreqBodyAcc.MeanY | MeanOfFreqBodyAcc.MeanY | 
+FreqBodyAcc.MeanZ | MeanOfFreqBodyAcc.MeanZ | 
+FreqBodyAcc.Meanq...X | MeanOfFreqBodyAcc.Meanq...X | 
+FreqBodyAcc.Meanq...Y | MeanOfFreqBodyAcc.Meanq...Y | 
+FreqBodyAcc.Meanq...Z | MeanOfFreqBodyAcc.Meanq...Z | 
+FreqBodyAccJerk.MeanX | MeanOfFreqBodyAccJerk.MeanX | 
+FreqBodyAccJerk.MeanY | MeanOfFreqBodyAccJerk.MeanY | 
+FreqBodyAccJerk.MeanZ | MeanOfFreqBodyAccJerk.MeanZ | 
+FreqBodyAccJerk.Meanq...X | MeanOfFreqBodyAccJerk.Meanq...X | 
+FreqBodyAccJerk.Meanq...Y | MeanOfFreqBodyAccJerk.Meanq...Y | 
+FreqBodyAccJerk.Meanq...Z | MeanOfFreqBodyAccJerk.Meanq...Z | 
+FreqBodyGyro.MeanX | MeanOfFreqBodyGyro.MeanX | 
+FreqBodyGyro.MeanY | MeanOfFreqBodyGyro.MeanY | 
+FreqBodyGyro.MeanZ | MeanOfFreqBodyGyro.MeanZ | 
+FreqBodyGyro.Meanq...X | MeanOfFreqBodyGyro.Meanq...X | 
+FreqBodyGyro.Meanq...Y | MeanOfFreqBodyGyro.Meanq...Y | 
+FreqBodyGyro.Meanq...Z | MeanOfFreqBodyGyro.Meanq...Z | 
+FreqBodyAccMag.Mean | MeanOfFreqBodyAccMag.Mean | 
+FreqBodyAccMag.Meanq.. | MeanOfFreqBodyAccMag.Meanq.. | 
+FreqBodyBodyAccJerkMag.Mean | MeanOfFreqBodyBodyAccJerkMag.Mean | 
+FreqBodyBodyAccJerkMag.Meanq.. | MeanOfFreqBodyBodyAccJerkMag.Meanq.. | 
+FreqBodyBodyGyroMag.Mean | MeanOfFreqBodyBodyGyroMag.Mean | 
+FreqBodyBodyGyroMag.Meanq.. | MeanOfFreqBodyBodyGyroMag.Meanq.. | 
+FreqBodyBodyGyroJerkMag.Mean | MeanOfFreqBodyBodyGyroJerkMag.Mean | 
+FreqBodyBodyGyroJerkMag.Meanq.. | MeanOfFreqBodyBodyGyroJerkMag.Meanq.. | 
 
 ** Note that this is the end of the README file.

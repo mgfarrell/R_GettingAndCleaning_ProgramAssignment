@@ -47,6 +47,8 @@ names(ActivityDataDetail) <- gsub("std..", "StdDev", names(ActivityDataDetail))
 names(ActivityDataDetail) <- gsub("mean...", "Mean", names(ActivityDataDetail))
 names(ActivityDataDetail) <- gsub("mean..", "Mean", names(ActivityDataDetail))
 
-# Step 8 - Steps to groups for Subject & Activity variables and calculate mean for each 'mean' and 'std dev' variable
+# Step 8 - Steps to groups for Subject & Activity variables and calculate mean for each 'mean' and 'std dev' variable.  Rename variables to describe aggregation.
 ActivityDataDetail_Group <- group_by(ActivityDataDetail, Subject, Activity)
 ActivityDataSummary <- summarise_each(ActivityDataDetail_Group, funs(mean))
+names(ActivityDataSummary) <- gsub("Time", "MeanofTime", names(ActivityDataSummary))
+names(ActivityDataSummary) <- gsub("Freq", "MeanofFreq", names(ActivityDataSummary))
