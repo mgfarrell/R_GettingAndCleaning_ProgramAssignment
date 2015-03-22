@@ -33,7 +33,7 @@ Step 7) Several steps to update variables to more user friendly names
 Used the gsub function in 8 lines to update variables to slightly more readable names.  At this point, the detail level of the data set which includes 10299 observations, 81 variables, with user friendly variables should be considered tidy.
 
 Step 8)  Steps to calculate the means of the standard deviation and mean variables by Subject and Activity.
-Two lines of script are used to create the ActivityDataSummary data set, which includes 180 observations with 81 variables.  The group_by and summarise_each functions from the dplyr library will used to accomplish this.
+Two lines of script are used to create the ActivityDataSummary data set, which includes 180 observations with 81 variables.  The group_by and summarise_each functions from the dplyr library will used to accomplish this.  Final piece of the script is renaming of variables by adding 'Mean of' as a prefix to more clearly indicate that they are aggregated values.
 
 ## Codebook
 
