@@ -16,7 +16,7 @@ Features_data_vector <- as.vector(Features_data$V2)
 names(X_TrainTest) <- c(Features_data_vector)
 
 # Combines Y Train and Test data into a single data set, renames column, and binds column with X_Train_Test
-Y_TrainTest <- bind_rows(Y_Test_data, Y_Train_data)
+Y_TrainTest <- bind_rows(Y_Train_data, Y_Test_data)
 Y_TrainTest <- rename(Y_TrainTest, ActivityCode = V1)
 YX_TrainTest <- bind_cols(X_TrainTest, Y_TrainTest)
 
