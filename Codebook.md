@@ -1,5 +1,7 @@
 # Getting and Cleaning - Program Assignment Codebook
 
+This codebook provides a high level overview of the observations and variables.  The code book is not intended to provide the level of detail that would typically be included in a data dictionary, rather it describes the variables that were selected, renaming of variables, and aggregation of the data set.
+
 ## Source Data
 * The activity recorded in the course of the experiment was captured in the X_Test and X_Train files.  These contain a total of 10299 observations and 561 variables.
 * The values in Y_Test and Y_Train indicate the type activity that was performed.  A total of six unique values (1-6), whose labels are within activity_labels with 10299 observations and 561 variables.
